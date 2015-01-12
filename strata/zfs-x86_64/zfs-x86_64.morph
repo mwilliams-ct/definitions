@@ -1,0 +1,6 @@
+name: zfs-x86_64
+kind: chunk
+build-system: autotools
+configure-commands:
+- ./autogen.sh
+- ./configure --with-linux=/usr/src/linux/ --prefix=/
