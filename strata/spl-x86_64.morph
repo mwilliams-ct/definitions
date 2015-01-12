@@ -1,0 +1,13 @@
+name: spl-x86_64
+kind: stratum
+description: the spl stratum for x86_64
+build-depends:
+- morph: strata/foundation.morph
+- morph: strata/bsp-x86_64-generic.morph
+chunks:
+- name: spl-x86_64
+  morph: strata/spl-x86_64/spl-x86_64.morph
+  repo: https://github.com/zfsonlinux/spl.git
+  ref: ac6fcd4a434513fabebf372dc0c169c8425d3573
+  unpetrify-ref: spl-0.6.3-1.1 
+  build-depends: []
