@@ -1,0 +1,12 @@
+name: bsp-generic.morph
+kind: stratum
+description: A generic stratum providing access to kernel source
+build-depends:
+- morph: strata/core.morph
+chunks:
+- name: linux-generic
+  morph: strata/bsp-generic/linux-generic.morph
+  repo: upstream:linux
+  ref: d67a0e110187abd560a1de63fa172894a52839d5
+  unpetrify-ref: baserock/morph
+  build-depends: []
