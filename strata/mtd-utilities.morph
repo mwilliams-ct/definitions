@@ -1,0 +1,11 @@
+name: mtd-utilities
+kind: stratum
+build-depends:
+- morph: strata/foundation.morph
+- morph: strata/core.morph
+chunks:
+- name: mtd-utils
+  morph: strata/mtd-utilities/mtd-utils.morph
+  repo: upstream:mtd-utils
+  ref: 9dec4621e33db1df07730158ed2c8f884af5a6a3
+  unpetrify-ref: v1.5.1
